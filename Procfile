@@ -1,2 +1,2 @@
-release: python manage.py migrate
-web: python manage.py collectstatic --noinput; gunicorn bhm_site.wsgi
+release: python manage.py migrate && python manage.py collectstatic --noinput
+web: gunicorn bhm_site.wsgi
