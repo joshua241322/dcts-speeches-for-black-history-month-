@@ -29,9 +29,9 @@ environ.Env.read_env(BASE_DIR / '.env', verbose=False)
 SECRET_KEY = env('SECRET_KEY', default='django-insecure-#0-dpkmp7qs#y)02y#vf@0(3hb&-57x+cac@nzwadl*z+easas')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = env('DEBUG', default=False)
+DEBUG = env('DEBUG', default=True)
 
-ALLOWED_HOSTS = env('ALLOWED_HOSTS', default='localhost,127.0.0.1').split(',')
+ALLOWED_HOSTS = env('ALLOWED_HOSTS', default='localhost,127.0.0.1,*.onrender.com').split(',')
 
 
 # Application definition
